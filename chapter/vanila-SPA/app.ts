@@ -4,7 +4,7 @@ import path from 'path';
 const app = express();
 
 app.use(
-  "/static",
+  "/src",
   express.static(path.resolve(__dirname, "frontend", "src"))
 );
 
