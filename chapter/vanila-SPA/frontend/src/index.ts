@@ -1,5 +1,5 @@
-
-
+import Dashboard from "./views/Dashboard";
+import Detail from "./views/Detail";
 
 const navigateTo = (url : string) => {
   history.pushState(null, null, url);
@@ -8,8 +8,8 @@ const navigateTo = (url : string) => {
 const router = async () => {
 
   const routes = [
-    { path : "/", view : "Dashboard" },
-    { path : "/:id", view : "Detail" },
+    { path : "/", view : Dashboard },
+    { path : "/:id", view : Detail },
   ]
 
   const routeMatches = routes.map((route)  => {
